@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'ifmap' (im2col/conv.cpp:1) accessed through non-constant indices on dimension 1 (im2col/conv.cpp:22:6), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="im2col" solutionName="solution1" date="2020-08-14T03:06:38.939+0900" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Ignored unroll directive 'Loop-1.1.1.1' (im2col/conv.cpp:21) in function 'conv': multiple loop unroll directives in one loop, use the first one and ignore the rest." projectName="im2col" solutionName="solution1" date="2020-08-14T03:06:38.868+0900" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Ignored unroll directive 'Loop-1.1.1' (im2col/conv.cpp:20) in function 'conv': multiple loop unroll directives in one loop, use the first one and ignore the rest." projectName="im2col" solutionName="solution1" date="2020-08-14T03:06:38.855+0900" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

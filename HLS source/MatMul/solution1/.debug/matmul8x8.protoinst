@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"matmul8x8": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="11" filename="MatMul/coretest.cpp" linenumber="3" name="icmp_ln3" contextFuncName="top" moduleName="top" rtlName="icmp_ln3_fu_108_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="C:\Users\aranz\FPGA"><\/item>
+<item  id="13" filename="MatMul/coretest.cpp" linenumber="3" name="i" contextFuncName="top" moduleName="top" rtlName="i_fu_114_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="C:\Users\aranz\FPGA"><\/item>
+<item  id="18" filename="MatMul/coretest.cpp" linenumber="7" name="zext_ln7" contextFuncName="top" moduleName="top" rtlName="zext_ln7_fu_120_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA"><\/item>
+<item  id="24" filename="MatMul/coretest.cpp" linenumber="9" name="reg_buff" contextFuncName="top" moduleName="top" rtlName="top_fmul_32ns_32ncud_U2" latency="3" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA"><\/item>
+<item  id="28" filename="MatMul/coretest.cpp" linenumber="10" name="reg_output" contextFuncName="top" moduleName="top" rtlName="top_fadd_32ns_32nbkb_U1" latency="4" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA"><\/item>
+<\/annotationInfo>
+</annotationInfo>

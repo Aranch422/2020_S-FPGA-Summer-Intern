@@ -1,0 +1,66 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'aranz' on host 'desktop-i10cskb' (Windows NT_amd64 version 6.2) on Fri Aug 28 13:07:43 +0900 2020
+INFO: [HLS 200-10] In directory 'C:/Users/aranz/FPGA/Pooling'
+Sourcing Tcl script 'C:/Users/aranz/FPGA/Pooling/Pooling/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project 'C:/Users/aranz/FPGA/Pooling/Pooling'.
+INFO: [HLS 200-10] Adding design file 'Pooling/maxPooling_10x10.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'Pooling/maxPooling_28x28.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/aranz/FPGA/Pooling/Pooling/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Pooling/maxPooling_28x28.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Pooling/maxPooling_10x10.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 177.883 ; gain = 87.414
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 177.883 ; gain = 87.414
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 177.883 ; gain = 87.414
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 177.883 ; gain = 87.414
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (Pooling/maxPooling_10x10.cpp:10) in function 'Max_Pooling_10x10' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (Pooling/maxPooling_10x10.cpp:12) in function 'Max_Pooling_10x10' completely with a factor of 5.
+INFO: [XFORM 203-101] Partitioning array 'ifmap' (Pooling/maxPooling_10x10.cpp:1) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 177.883 ; gain = 87.414
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 177.883 ; gain = 87.414
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Max_Pooling_10x10' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Max_Pooling_10x10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('ifmap_6_load_1', Pooling/maxPooling_10x10.cpp:14) on array 'ifmap_6' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'ifmap_6'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 10, Depth = 12.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 22.948 seconds; current allocated memory: 101.338 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.534 seconds; current allocated memory: 102.794 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Max_Pooling_10x10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_0' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_1' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_2' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_3' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_4' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_5' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_6' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_7' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_8' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/ifmap_9' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Max_Pooling_10x10/result' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Max_Pooling_10x10' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'ifmap_0', 'ifmap_1', 'ifmap_2', 'ifmap_3', 'ifmap_4', 'ifmap_5', 'ifmap_6', 'ifmap_7', 'ifmap_8', 'ifmap_9' and 'result' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Max_Pooling_10x10'.
+INFO: [HLS 200-111]  Elapsed time: 1.174 seconds; current allocated memory: 104.533 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 115.42 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 177.883 ; gain = 87.414
+INFO: [VHDL 208-304] Generating VHDL RTL for Max_Pooling_10x10.
+INFO: [VLOG 209-307] Generating Verilog RTL for Max_Pooling_10x10.
+INFO: [HLS 200-112] Total elapsed time: 29.174 seconds; peak allocated memory: 104.533 MB.

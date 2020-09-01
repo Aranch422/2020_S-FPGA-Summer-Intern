@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="src.h" path="C:\Users\aranz\FPGA\First_Test\src.h"/>
+    <originFiles name="src.c" path="C:\Users\aranz\FPGA\First_Test\src.c"/>
+  </source>
+  <testbench>
+    <originFiles name="src_test.c" path="C:\Users\aranz\FPGA\First_Test\src_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

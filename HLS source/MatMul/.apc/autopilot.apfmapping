@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sys_matmul8x8_port2.cpp" path="C:\Users\aranz\FPGA\MatMul\sys_matmul8x8_port2.cpp"/>
+    <originFiles name="coretest.cpp" path="C:\Users\aranz\FPGA\MatMul\coretest.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

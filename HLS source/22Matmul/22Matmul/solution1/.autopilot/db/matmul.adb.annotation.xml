@@ -1,0 +1,23 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="11" filename="src.c" linenumber="4" name="icmp_ln4" contextFuncName="matmul" moduleName="matmul" rtlName="icmp_ln4_fu_99_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="9" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="13" filename="src.c" linenumber="4" name="i" contextFuncName="matmul" moduleName="matmul" rtlName="i_fu_105_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="10" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="16" filename="src.c" linenumber="7" name="tmp" contextFuncName="matmul" moduleName="matmul" rtlName="tmp_fu_111_p3" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="17" filename="src.c" linenumber="5" name="zext_ln5" contextFuncName="matmul" moduleName="matmul" rtlName="zext_ln5_fu_119_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="21" filename="src.c" linenumber="5" name="icmp_ln5" contextFuncName="matmul" moduleName="matmul" rtlName="icmp_ln5_fu_123_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="9" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="23" filename="src.c" linenumber="5" name="j" contextFuncName="matmul" moduleName="matmul" rtlName="j_fu_129_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="10" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="26" filename="src.c" linenumber="7" name="zext_ln7" contextFuncName="matmul" moduleName="matmul" rtlName="zext_ln7_fu_135_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="27" filename="src.c" linenumber="7" name="add_ln7" contextFuncName="matmul" moduleName="matmul" rtlName="add_ln7_fu_139_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="28" filename="src.c" linenumber="7" name="zext_ln7_1" contextFuncName="matmul" moduleName="matmul" rtlName="zext_ln7_1_fu_144_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="33" filename="src.c" linenumber="6" name="icmp_ln6" contextFuncName="matmul" moduleName="matmul" rtlName="icmp_ln6_fu_149_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="9" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="35" filename="src.c" linenumber="6" name="k" contextFuncName="matmul" moduleName="matmul" rtlName="k_fu_155_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="10" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="38" filename="src.c" linenumber="7" name="zext_ln7_2" contextFuncName="matmul" moduleName="matmul" rtlName="zext_ln7_2_fu_161_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="39" filename="src.c" linenumber="7" name="add_ln7_1" contextFuncName="matmul" moduleName="matmul" rtlName="add_ln7_1_fu_165_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="40" filename="src.c" linenumber="7" name="zext_ln7_3" contextFuncName="matmul" moduleName="matmul" rtlName="zext_ln7_3_fu_170_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="42" filename="src.c" linenumber="7" name="tmp_1" contextFuncName="matmul" moduleName="matmul" rtlName="tmp_1_fu_175_p3" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="43" filename="src.c" linenumber="7" name="zext_ln7_4" contextFuncName="matmul" moduleName="matmul" rtlName="zext_ln7_4_fu_183_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="44" filename="src.c" linenumber="7" name="add_ln7_2" contextFuncName="matmul" moduleName="matmul" rtlName="add_ln7_2_fu_187_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="45" filename="src.c" linenumber="7" name="zext_ln7_5" contextFuncName="matmul" moduleName="matmul" rtlName="zext_ln7_5_fu_192_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<item  id="49" filename="src.c" linenumber="7" name="mul_ln7" contextFuncName="matmul" moduleName="matmul" rtlName="mul_ln7_fu_197_p2" latency="0" BRAM="-1" DSP="3" FF="0" LUT="20" fileDirectory="C:\Users\aranz\FPGA\22Matmul"><\/item>
+<\/annotationInfo>
+</annotationInfo>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="maxPooling_28x28.cpp" path="C:\Users\aranz\FPGA\Pooling\Pooling\maxPooling_28x28.cpp"/>
+    <originFiles name="maxPooling_10x10.cpp" path="C:\Users\aranz\FPGA\Pooling\Pooling\maxPooling_10x10.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

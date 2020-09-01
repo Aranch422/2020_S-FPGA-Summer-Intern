@@ -1,0 +1,5 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="14" filename="adder.cpp" linenumber="7" name="add_ln7" contextFuncName="add" moduleName="add" rtlName="c" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\aranz\FPGA\Third_Test"><\/item>
+<\/annotationInfo>
+</annotationInfo>

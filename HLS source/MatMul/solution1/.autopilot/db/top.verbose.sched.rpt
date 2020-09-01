@@ -1,0 +1,258 @@
+
+
+================================================================
+== Vivado HLS Report for 'top'
+================================================================
+* Date:           Fri Jul 24 02:25:07 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        MatMul
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 7.256 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      112|      112| 1.120 us | 1.120 us |  112|  112|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |      110|      110|        12|          1|          1|   100|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 12
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 12, States = { 2 3 4 5 6 7 8 9 10 11 12 13 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 14 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 2 
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([100 x float]* %in_1) nounwind, !map !11"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([100 x float]* %in_2) nounwind, !map !17"   --->   Operation 16 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([100 x float]* %output_1) nounwind, !map !21"   --->   Operation 17 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @top_str) nounwind"   --->   Operation 18 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.76ns)   --->   "br label %1" [MatMul/coretest.cpp:3]   --->   Operation 19 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%i_0 = phi i7 [ 0, %0 ], [ %i, %hls_label_0_begin ]"   --->   Operation 20 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (1.48ns)   --->   "%icmp_ln3 = icmp eq i7 %i_0, -28" [MatMul/coretest.cpp:3]   --->   Operation 21 'icmp' 'icmp_ln3' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 100, i64 100, i64 100) nounwind"   --->   Operation 22 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (1.87ns)   --->   "%i = add i7 %i_0, 1" [MatMul/coretest.cpp:3]   --->   Operation 23 'add' 'i' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "br i1 %icmp_ln3, label %2, label %hls_label_0_begin" [MatMul/coretest.cpp:3]   --->   Operation 24 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln7 = zext i7 %i_0 to i64" [MatMul/coretest.cpp:7]   --->   Operation 25 'zext' 'zext_ln7' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%in_1_addr = getelementptr [100 x float]* %in_1, i64 0, i64 %zext_ln7" [MatMul/coretest.cpp:7]   --->   Operation 26 'getelementptr' 'in_1_addr' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_2 : Operation 27 [2/2] (3.25ns)   --->   "%reg_in_1 = load float* %in_1_addr, align 4" [MatMul/coretest.cpp:7]   --->   Operation 27 'load' 'reg_in_1' <Predicate = (!icmp_ln3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%in_2_addr = getelementptr [100 x float]* %in_2, i64 0, i64 %zext_ln7" [MatMul/coretest.cpp:8]   --->   Operation 28 'getelementptr' 'in_2_addr' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_2 : Operation 29 [2/2] (3.25ns)   --->   "%reg_in_2 = load float* %in_2_addr, align 4" [MatMul/coretest.cpp:8]   --->   Operation 29 'load' 'reg_in_2' <Predicate = (!icmp_ln3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 30 [1/2] (3.25ns)   --->   "%reg_in_1 = load float* %in_1_addr, align 4" [MatMul/coretest.cpp:7]   --->   Operation 30 'load' 'reg_in_1' <Predicate = (!icmp_ln3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+ST_3 : Operation 31 [1/2] (3.25ns)   --->   "%reg_in_2 = load float* %in_2_addr, align 4" [MatMul/coretest.cpp:8]   --->   Operation 31 'load' 'reg_in_2' <Predicate = (!icmp_ln3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+
+State 4 <SV = 3> <Delay = 6.94>
+ST_4 : Operation 32 [4/4] (6.94ns)   --->   "%reg_buff = fmul float %reg_in_1, %reg_in_2" [MatMul/coretest.cpp:9]   --->   Operation 32 'fmul' 'reg_buff' <Predicate = (!icmp_ln3)> <Delay = 6.94> <Core = "FMul_fulldsp">   --->   Core 133 'FMul_fulldsp' <Latency = 3> <II = 1> <Delay = 6.94> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.94>
+ST_5 : Operation 33 [3/4] (6.94ns)   --->   "%reg_buff = fmul float %reg_in_1, %reg_in_2" [MatMul/coretest.cpp:9]   --->   Operation 33 'fmul' 'reg_buff' <Predicate = (!icmp_ln3)> <Delay = 6.94> <Core = "FMul_fulldsp">   --->   Core 133 'FMul_fulldsp' <Latency = 3> <II = 1> <Delay = 6.94> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.94>
+ST_6 : Operation 34 [2/4] (6.94ns)   --->   "%reg_buff = fmul float %reg_in_1, %reg_in_2" [MatMul/coretest.cpp:9]   --->   Operation 34 'fmul' 'reg_buff' <Predicate = (!icmp_ln3)> <Delay = 6.94> <Core = "FMul_fulldsp">   --->   Core 133 'FMul_fulldsp' <Latency = 3> <II = 1> <Delay = 6.94> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.94>
+ST_7 : Operation 35 [1/4] (6.94ns)   --->   "%reg_buff = fmul float %reg_in_1, %reg_in_2" [MatMul/coretest.cpp:9]   --->   Operation 35 'fmul' 'reg_buff' <Predicate = (!icmp_ln3)> <Delay = 6.94> <Core = "FMul_fulldsp">   --->   Core 133 'FMul_fulldsp' <Latency = 3> <II = 1> <Delay = 6.94> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 7.25>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecFUCore(float %reg_buff, [54 x i8]* @p_str3, [1 x i8]* @p_str1, [13 x i8]* @p_str4, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [MatMul/coretest.cpp:10]   --->   Operation 36 'specfucore' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_8 : Operation 37 [5/5] (7.25ns)   --->   "%reg_output = fadd float %reg_buff, %reg_in_1" [MatMul/coretest.cpp:10]   --->   Operation 37 'fadd' 'reg_output' <Predicate = (!icmp_ln3)> <Delay = 7.25> <Core = "FAddSub_fulldsp">   --->   Core 130 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 7.25>
+ST_9 : Operation 38 [4/5] (7.25ns)   --->   "%reg_output = fadd float %reg_buff, %reg_in_1" [MatMul/coretest.cpp:10]   --->   Operation 38 'fadd' 'reg_output' <Predicate = (!icmp_ln3)> <Delay = 7.25> <Core = "FAddSub_fulldsp">   --->   Core 130 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 7.25>
+ST_10 : Operation 39 [3/5] (7.25ns)   --->   "%reg_output = fadd float %reg_buff, %reg_in_1" [MatMul/coretest.cpp:10]   --->   Operation 39 'fadd' 'reg_output' <Predicate = (!icmp_ln3)> <Delay = 7.25> <Core = "FAddSub_fulldsp">   --->   Core 130 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 7.25>
+ST_11 : Operation 40 [2/5] (7.25ns)   --->   "%reg_output = fadd float %reg_buff, %reg_in_1" [MatMul/coretest.cpp:10]   --->   Operation 40 'fadd' 'reg_output' <Predicate = (!icmp_ln3)> <Delay = 7.25> <Core = "FAddSub_fulldsp">   --->   Core 130 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 7.25>
+ST_12 : Operation 41 [1/5] (7.25ns)   --->   "%reg_output = fadd float %reg_buff, %reg_in_1" [MatMul/coretest.cpp:10]   --->   Operation 41 'fadd' 'reg_output' <Predicate = (!icmp_ln3)> <Delay = 7.25> <Core = "FAddSub_fulldsp">   --->   Core 130 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 3.25>
+ST_13 : Operation 42 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str) nounwind" [MatMul/coretest.cpp:3]   --->   Operation 42 'specregionbegin' 'tmp' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_13 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [MatMul/coretest.cpp:4]   --->   Operation 43 'specpipeline' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_13 : Operation 44 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([54 x i8]* @p_str3) nounwind" [MatMul/coretest.cpp:10]   --->   Operation 44 'specregionbegin' 'tmp_1' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_13 : Operation 45 [1/1] (0.00ns)   --->   "%empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([54 x i8]* @p_str3, i32 %tmp_1) nounwind" [MatMul/coretest.cpp:11]   --->   Operation 45 'specregionend' 'empty_2' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_13 : Operation 46 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([60 x i8]* @p_str6) nounwind" [MatMul/coretest.cpp:11]   --->   Operation 46 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_13 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecFUCore(float %reg_output, [60 x i8]* @p_str6, [1 x i8]* @p_str1, [16 x i8]* @p_str7, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [MatMul/coretest.cpp:11]   --->   Operation 47 'specfucore' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_13 : Operation 48 [1/1] (0.00ns)   --->   "%empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([60 x i8]* @p_str6, i32 %tmp_2) nounwind" [MatMul/coretest.cpp:12]   --->   Operation 48 'specregionend' 'empty_3' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_13 : Operation 49 [1/1] (0.00ns)   --->   "%output_1_addr = getelementptr [100 x float]* %output_1, i64 0, i64 %zext_ln7" [MatMul/coretest.cpp:11]   --->   Operation 49 'getelementptr' 'output_1_addr' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_13 : Operation 50 [1/1] (3.25ns)   --->   "store float %reg_output, float* %output_1_addr, align 4" [MatMul/coretest.cpp:11]   --->   Operation 50 'store' <Predicate = (!icmp_ln3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+ST_13 : Operation 51 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str, i32 %tmp) nounwind" [MatMul/coretest.cpp:12]   --->   Operation 51 'specregionend' 'empty_4' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+ST_13 : Operation 52 [1/1] (0.00ns)   --->   "br label %1" [MatMul/coretest.cpp:3]   --->   Operation 52 'br' <Predicate = (!icmp_ln3)> <Delay = 0.00>
+
+State 14 <SV = 2> <Delay = 0.00>
+ST_14 : Operation 53 [1/1] (0.00ns)   --->   "ret void" [MatMul/coretest.cpp:14]   --->   Operation 53 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', MatMul/coretest.cpp:3) [10]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', MatMul/coretest.cpp:3) [10]  (0 ns)
+	'getelementptr' operation ('in_1_addr', MatMul/coretest.cpp:7) [19]  (0 ns)
+	'load' operation ('reg_in_1', MatMul/coretest.cpp:7) on array 'in_1' [20]  (3.25 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('reg_in_1', MatMul/coretest.cpp:7) on array 'in_1' [20]  (3.25 ns)
+
+ <State 4>: 6.95ns
+The critical path consists of the following:
+	'fmul' operation ('reg_buff', MatMul/coretest.cpp:9) [24]  (6.95 ns)
+
+ <State 5>: 6.95ns
+The critical path consists of the following:
+	'fmul' operation ('reg_buff', MatMul/coretest.cpp:9) [24]  (6.95 ns)
+
+ <State 6>: 6.95ns
+The critical path consists of the following:
+	'fmul' operation ('reg_buff', MatMul/coretest.cpp:9) [24]  (6.95 ns)
+
+ <State 7>: 6.95ns
+The critical path consists of the following:
+	'fmul' operation ('reg_buff', MatMul/coretest.cpp:9) [24]  (6.95 ns)
+
+ <State 8>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('reg_output', MatMul/coretest.cpp:10) [28]  (7.26 ns)
+
+ <State 9>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('reg_output', MatMul/coretest.cpp:10) [28]  (7.26 ns)
+
+ <State 10>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('reg_output', MatMul/coretest.cpp:10) [28]  (7.26 ns)
+
+ <State 11>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('reg_output', MatMul/coretest.cpp:10) [28]  (7.26 ns)
+
+ <State 12>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('reg_output', MatMul/coretest.cpp:10) [28]  (7.26 ns)
+
+ <State 13>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('output_1_addr', MatMul/coretest.cpp:11) [31]  (0 ns)
+	'store' operation ('store_ln11', MatMul/coretest.cpp:11) of variable 'reg_output', MatMul/coretest.cpp:10 on array 'output_1' [32]  (3.25 ns)
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

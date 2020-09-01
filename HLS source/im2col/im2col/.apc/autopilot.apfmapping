@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="conv.cpp" path="C:\Users\aranz\FPGA\im2col\im2col\conv.cpp"/>
+    <originFiles name="im2col.cpp" path="C:\Users\aranz\FPGA\im2col\im2col\im2col.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

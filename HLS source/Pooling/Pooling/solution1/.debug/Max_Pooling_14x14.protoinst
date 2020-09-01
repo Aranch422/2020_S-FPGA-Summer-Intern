@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Max_Pooling_14x14": {
+			"proto_instances": {
+			}
+		}
+	}
+}

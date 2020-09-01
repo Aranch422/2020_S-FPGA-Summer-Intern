@@ -1,0 +1,268 @@
+# 1 "MatMul/sys_matmul8x8_port2.cpp"
+# 1 "MatMul/sys_matmul8x8_port2.cpp" 1
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 152 "<built-in>" 3
+# 1 "<command line>" 1
+
+
+
+
+
+
+
+# 1 "D:/Xilinx/Vivado/2019.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h" 1
+# 157 "D:/Xilinx/Vivado/2019.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
+extern "C" {
+
+
+
+
+
+
+    void _ssdm_op_IfRead(...) __attribute__ ((nothrow));
+    void _ssdm_op_IfWrite(...) __attribute__ ((nothrow));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbRead(...) __attribute__ ((nothrow));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfNbWrite(...) __attribute__ ((nothrow));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfCanRead(...) __attribute__ ((nothrow));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_IfCanWrite(...) __attribute__ ((nothrow));
+
+
+    void _ssdm_StreamRead(...) __attribute__ ((nothrow));
+    void _ssdm_StreamWrite(...) __attribute__ ((nothrow));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbRead(...) __attribute__ ((nothrow));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamNbWrite(...) __attribute__ ((nothrow));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanRead(...) __attribute__ ((nothrow));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_StreamCanWrite(...) __attribute__ ((nothrow));
+    unsigned _ssdm_StreamSize(...) __attribute__ ((nothrow));
+
+
+
+
+    void _ssdm_op_MemShiftRead(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_Wait(...) __attribute__ ((nothrow));
+    void _ssdm_op_Poll(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_Return(...) __attribute__ ((nothrow));
+
+
+    void _ssdm_op_SpecSynModule(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecTopModule(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecProcessDecl(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecProcessDef(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecPort(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecConnection(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecChannel(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecSensitive(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecModuleInst(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecPortMap(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecReset(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecPlatform(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecClockDomain(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecPowerDomain(...) __attribute__ ((nothrow));
+
+    int _ssdm_op_SpecRegionBegin(...) __attribute__ ((nothrow));
+    int _ssdm_op_SpecRegionEnd(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecLoopName(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecLoopTripCount(...) __attribute__ ((nothrow));
+
+    int _ssdm_op_SpecStateBegin(...) __attribute__ ((nothrow));
+    int _ssdm_op_SpecStateEnd(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecInterface(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecPipeline(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecDataflowPipeline(...) __attribute__ ((nothrow));
+
+
+    void _ssdm_op_SpecLatency(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecParallel(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecProtocol(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecOccurrence(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecResource(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecResourceLimit(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecCHCore(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecFUCore(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecIFCore(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecIPCore(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecKeepValue(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecMemCore(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecExt(...) __attribute__ ((nothrow));
+
+
+
+
+    void _ssdm_SpecArrayDimSize(...) __attribute__ ((nothrow));
+
+    void _ssdm_RegionBegin(...) __attribute__ ((nothrow));
+    void _ssdm_RegionEnd(...) __attribute__ ((nothrow));
+
+    void _ssdm_Unroll(...) __attribute__ ((nothrow));
+    void _ssdm_UnrollRegion(...) __attribute__ ((nothrow));
+
+    void _ssdm_InlineAll(...) __attribute__ ((nothrow));
+    void _ssdm_InlineLoop(...) __attribute__ ((nothrow));
+    void _ssdm_Inline(...) __attribute__ ((nothrow));
+    void _ssdm_InlineSelf(...) __attribute__ ((nothrow));
+    void _ssdm_InlineRegion(...) __attribute__ ((nothrow));
+
+    void _ssdm_SpecArrayMap(...) __attribute__ ((nothrow));
+    void _ssdm_SpecArrayPartition(...) __attribute__ ((nothrow));
+    void _ssdm_SpecArrayReshape(...) __attribute__ ((nothrow));
+
+    void _ssdm_SpecStream(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecStable(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecStableContent(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecPipoDepth(...) __attribute__ ((nothrow));
+
+    void _ssdm_SpecExpr(...) __attribute__ ((nothrow));
+    void _ssdm_SpecExprBalance(...) __attribute__ ((nothrow));
+
+    void _ssdm_SpecDependence(...) __attribute__ ((nothrow));
+
+    void _ssdm_SpecLoopMerge(...) __attribute__ ((nothrow));
+    void _ssdm_SpecLoopFlatten(...) __attribute__ ((nothrow));
+    void _ssdm_SpecLoopRewind(...) __attribute__ ((nothrow));
+
+    void _ssdm_SpecFuncInstantiation(...) __attribute__ ((nothrow));
+    void _ssdm_SpecFuncBuffer(...) __attribute__ ((nothrow));
+    void _ssdm_SpecFuncExtract(...) __attribute__ ((nothrow));
+    void _ssdm_SpecConstant(...) __attribute__ ((nothrow));
+
+    void _ssdm_DataPack(...) __attribute__ ((nothrow));
+    void _ssdm_SpecDataPack(...) __attribute__ ((nothrow));
+
+    void _ssdm_op_SpecBitsMap(...) __attribute__ ((nothrow));
+    void _ssdm_op_SpecLicense(...) __attribute__ ((nothrow));
+
+    void __xilinx_ip_top(...) __attribute__ ((nothrow));
+
+
+}
+# 9 "<command line>" 2
+# 1 "<built-in>" 2
+# 1 "MatMul/sys_matmul8x8_port2.cpp" 2
+void sys_matmul8x8_2port(float matA[8][1031],float matB[8][1031],float (&result)[64]){_ssdm_SpecArrayDimSize(matA, 8);_ssdm_SpecArrayDimSize(matB, 8);
+_ssdm_op_SpecInterface(matA, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(matB, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(result, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+
+_ssdm_op_SpecInterface(0, "ap_ctrl_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+
+_ssdm_InlineSelf(2, "");
+ float sum[64];
+
+ float temp_sum,temp_mul=0;
+
+ float a[8][8];
+ float b[8][8];
+_ssdm_SpecArrayPartition( sum, 1, "COMPLETE", 0, "");
+
+_ssdm_SpecArrayPartition( matA, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( matB, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( a, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( b, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( result, 1, "COMPLETE", 0, "");
+ for(int i=0;i<64;i++){
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_Unroll(0,0,0, "");
+ sum[i]=0;
+ }
+
+ for(int i=0;i<8;i++){
+  for(int j=0;j<8;j++){
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_Unroll(0,0,0, "");
+ a[i][j]=0;
+   b[i][j]=0;
+  }
+ }
+
+
+ for(int k=1030;k>=0;k--){
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+
+ for(int i=7;i>0;i--){
+   for(int j=7;j>0;j--){
+    a[i][j]=a[i][j-1];
+    b[i][j]=b[i-1][j];
+   }
+  }
+
+  for(int i=0;i<8;i++){
+_ssdm_Unroll(0,0,0, "");
+ a[i][0]=matA[i][k];
+   b[0][i]=matB[i][k];
+  }
+
+
+  for(int i=0;i<8;i++){
+   for(int j=0;j<8;j++){
+
+#pragma 
+_ssdm_Unroll(0,0,0, "");
+ 
+{ _ssdm_RegionBegin("?Fmul_nodsp_temp_mul_Region_MatMul/sys_matmul8x8_port2.cpp:60:2");
+# 60 "MatMul/sys_matmul8x8_port2.cpp"
+temp_mul=a[i][j]*b[i][j];
+_ssdm_op_SpecResource(temp_mul, "?Fmul_nodsp_temp_mul_Region_MatMul/sys_matmul8x8_port2.cpp:60:2", "", "Fmul_nodsp", "", -1, "", "", "", "", "");
+_ssdm_RegionEnd("?Fmul_nodsp_temp_mul_Region_MatMul/sys_matmul8x8_port2.cpp:60:2"); }
+# 60 "MatMul/sys_matmul8x8_port2.cpp"
+
+    sum[i*8+j]+=temp_mul;
+   }
+  }
+ }
+
+
+ for(int k=0;k<7;k++){
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+
+ for(int i=7;i>0;i--){
+   for(int j=7;j>0;j--){
+    a[i][j]=a[i][j-1];
+    b[i][j]=b[i-1][j];
+   }
+  }
+
+  for(int i=0;i<8;i++){
+_ssdm_Unroll(0,0,0, "");
+ a[i][0]=0;
+   b[0][i]=0;
+  }
+
+
+  for(int i=0;i<8;i++){
+   for(int j=0;j<8;j++){
+
+#pragma 
+_ssdm_Unroll(0,0,0, "");
+ 
+{ _ssdm_RegionBegin("?Fmul_nodsp_temp_mul_Region_MatMul/sys_matmul8x8_port2.cpp:89:2");
+# 89 "MatMul/sys_matmul8x8_port2.cpp"
+temp_mul=a[i][j]*b[i][j];
+_ssdm_op_SpecResource(temp_mul, "?Fmul_nodsp_temp_mul_Region_MatMul/sys_matmul8x8_port2.cpp:89:2", "", "Fmul_nodsp", "", -1, "", "", "", "", "");
+_ssdm_RegionEnd("?Fmul_nodsp_temp_mul_Region_MatMul/sys_matmul8x8_port2.cpp:89:2"); }
+# 89 "MatMul/sys_matmul8x8_port2.cpp"
+
+    sum[i*8+j]+=temp_mul;
+   }
+  }
+ }
+
+
+ for(int i=0;i<64;i++){
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_Unroll(0,0,0, "");
+ result[i]=sum[i];
+ }
+}

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"sys_matmul8x8_2port": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,845 @@
+INFO-FLOW: Workspace C:/Users/aranz/FPGA/im2col/im2col/solution1 opened at Fri Aug 14 03:06:26 +0900 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.102 sec.
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.246 sec.
+Command     ap_source done; 0.246 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.575 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.715 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=vhdl 
+Command   open_solution done; 1.118 sec.
+Execute   set_part xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.15 sec.
+Execute   create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl vhdl 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'im2col/im2col.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling im2col/im2col.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       is_encrypted im2col/im2col.cpp 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "im2col/im2col.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E im2col/im2col.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp
+Command       clang done; 1.178 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp"  -o "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.147 sec.
+INFO-FLOW: Done: GCC PP time: 2.4 seconds per iteration
+Execute       source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp std=gnu++98 -directive=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp std=gnu++98 -directive=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-dataflow-lawyer.im2col.pp.0.cpp.diag.yml C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-dataflow-lawyer.im2col.pp.0.cpp.out.log 2> C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-dataflow-lawyer.im2col.pp.0.cpp.err.log 
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/tidy-3.1.im2col.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/tidy-3.1.im2col.pp.0.cpp.out.log 2> C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/tidy-3.1.im2col.pp.0.cpp.err.log 
+Command         ap_eval done; 0.101 sec.
+Execute         source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-legacy-rewriter.im2col.pp.0.cpp.out.log 2> C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-legacy-rewriter.im2col.pp.0.cpp.err.log 
+Command       tidy_31 done; 0.22 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.4 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.bc
+Command       clang done; 1.197 sec.
+INFO: [HLS 200-10] Analyzing design file 'im2col/conv.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling im2col/conv.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       is_encrypted im2col/conv.cpp 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "im2col/conv.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E im2col/conv.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp
+Command       clang done; 1.194 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp"  -o "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.125 sec.
+INFO-FLOW: Done: GCC PP time: 2.4 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp std=gnu++98 -directive=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.126 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp std=gnu++98 -directive=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-dataflow-lawyer.conv.pp.0.cpp.diag.yml C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-dataflow-lawyer.conv.pp.0.cpp.out.log 2> C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-dataflow-lawyer.conv.pp.0.cpp.err.log 
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/tidy-3.1.conv.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/tidy-3.1.conv.pp.0.cpp.out.log 2> C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/tidy-3.1.conv.pp.0.cpp.err.log 
+Command         ap_eval done; 0.129 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-legacy-rewriter.conv.pp.0.cpp.out.log 2> C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/xilinx-legacy-rewriter.conv.pp.0.cpp.err.log 
+Command       tidy_31 done; 0.205 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.4 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.bc
+Command       clang done; 1.077 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/im2col.g.bc C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.g.bc -hls-opt -except-internalize conv -LD:/Xilinx/Vivado/2019.2/win64/lib -lhlsm -lhlsmc++ -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.481 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 179.008 ; gain = 89.016
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 179.008 ; gain = 89.016
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.pp.bc -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.119 sec.
+Execute         llvm-ld C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Xilinx/Vivado/2019.2/win64/lib -lfloatconversion -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.601 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top conv -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.g.0.bc -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 179.008 ; gain = 89.016
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.g.1.bc -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 179.008 ; gain = 89.016
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.g.1.bc to C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.o.1.bc -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (im2col/conv.cpp:16) in function 'conv' for pipelining.
+WARNING: [XFORM 203-503] Ignored unroll directive 'Loop-1.1.1' (im2col/conv.cpp:20) in function 'conv': multiple loop unroll directives in one loop, use the first one and ignore the rest.
+WARNING: [XFORM 203-503] Ignored unroll directive 'Loop-1.1.1.1' (im2col/conv.cpp:21) in function 'conv': multiple loop unroll directives in one loop, use the first one and ignore the rest.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (im2col/conv.cpp:20) in function 'conv' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (im2col/conv.cpp:21) in function 'conv' completely with a factor of 5.
+WARNING: [XFORM 203-104] Completely partitioning array 'ifmap' (im2col/conv.cpp:1) accessed through non-constant indices on dimension 1 (im2col/conv.cpp:22:6), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'ifmap' (im2col/conv.cpp:1) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'filter' (im2col/conv.cpp:2) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ofmap' (im2col/conv.cpp:3) in dimension 2 completely.
+Command         transform done; 30.835 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'conv' (im2col/conv.cpp:1)...47 expression(s) balanced.
+Command         transform done; 6.795 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 231.082 ; gain = 141.090
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.o.2.bc -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (im2col/conv.cpp:15:13) in function 'conv'.
+Command         transform done; 6.009 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 231.082 ; gain = 141.090
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 44.487 sec.
+Command     elaborate done; 54.306 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'conv' ...
+Execute       ap_set_top_model conv 
+Execute       get_model_list conv -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model conv 
+Execute       get_model_list conv -filter all-wo-channel 
+INFO-FLOW: Model list for configure: conv
+INFO-FLOW: Configuring Module : conv ...
+Execute       set_default_model conv 
+Execute       apply_spec_resource_limit conv 
+INFO-FLOW: Model list for preprocess: conv
+INFO-FLOW: Preprocessing Module: conv ...
+Execute       set_default_model conv 
+Execute       cdfg_preprocess -model conv 
+Command       cdfg_preprocess done; 0.414 sec.
+Execute       rtl_gen_preprocess conv 
+INFO-FLOW: Model list for synthesis: conv
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model conv 
+Execute       schedule -model conv 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 2.391 sec.
+INFO: [HLS 200-111]  Elapsed time: 59.586 seconds; current allocated memory: 158.325 MB.
+Execute       syn_report -verbosereport -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.verbose.sched.rpt 
+Command       syn_report done; 1.135 sec.
+Execute       db_write -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.sched.adb -f 
+Command       db_write done; 1.318 sec.
+INFO-FLOW: Finish scheduling conv.
+Execute       set_default_model conv 
+Execute       bind -model conv 
+BIND OPTION: model=conv
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.236 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.734 seconds; current allocated memory: 169.298 MB.
+Execute       syn_report -verbosereport -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.verbose.bind.rpt 
+Command       syn_report done; 0.943 sec.
+Execute       db_write -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.bind.adb -f 
+Command       db_write done; 1.919 sec.
+INFO-FLOW: Finish binding conv.
+Execute       get_model_list conv -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess conv 
+INFO-FLOW: Model list for RTL generation: conv
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model conv -vendor xilinx -mg_file C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_5' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_6' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_7' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_8' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_9' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_10' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_11' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_12' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_13' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_14' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_15' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_16' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_17' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_18' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_19' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_20' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_21' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_22' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_23' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_24' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_25' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_26' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_27' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_28' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_29' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_30' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_31' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_32' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_33' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_34' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_35' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_36' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_37' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_38' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_39' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_40' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_41' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_42' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_43' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_44' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_45' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_46' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_47' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_48' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_49' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_50' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_51' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_52' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_53' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_54' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_55' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_56' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_57' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_58' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_59' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_60' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_61' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_62' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_63' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_64' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_65' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_66' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_67' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_68' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_69' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_70' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_71' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_72' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_73' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_74' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_75' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_76' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_77' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_78' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_79' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_80' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_81' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_82' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_83' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_84' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_85' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_86' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_87' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_88' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_89' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_90' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_91' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_92' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_93' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_94' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_95' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_96' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_97' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_98' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_99' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_100' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_101' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_102' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_103' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_104' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_105' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_106' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_107' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_108' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_109' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_110' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_111' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_112' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_113' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_114' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_115' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_116' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_117' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_118' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_119' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_120' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_121' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_122' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_123' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_124' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_125' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_126' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_127' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_128' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_129' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_130' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_131' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_132' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_133' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_134' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_135' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_136' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_137' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_138' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_139' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_140' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_141' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_142' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_143' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_144' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_145' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_146' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_147' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_148' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_149' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_150' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_151' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_152' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_153' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_154' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_155' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_156' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_157' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_158' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_159' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_160' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_161' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_162' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_163' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_164' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_165' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_166' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_167' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_168' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_169' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_170' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_171' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_172' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_173' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_174' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_175' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_176' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_177' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_178' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_179' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_180' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_181' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_182' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_183' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_184' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_185' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_186' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_187' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_188' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_189' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_190' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_191' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_192' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_193' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_194' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_195' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_196' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_197' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_198' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_199' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_200' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_201' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_202' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_203' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_204' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_205' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_206' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_207' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_208' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_209' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_210' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_211' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_212' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_213' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_214' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_215' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_216' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_217' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_218' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_219' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_220' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_221' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_222' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_223' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_224' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_225' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_226' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_227' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_228' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_229' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_230' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_231' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_232' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_233' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_234' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_235' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_236' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_237' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_238' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_239' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_240' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_241' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_242' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_243' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_244' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_245' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_246' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_247' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_248' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_249' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_250' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_251' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_252' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_253' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_254' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ifmap_255' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_5' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_6' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_7' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_8' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_9' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_10' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_11' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_12' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_13' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_14' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_15' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_16' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_17' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_18' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_19' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_20' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_21' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_22' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_23' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/filter_24' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_0' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_1' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_2' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_3' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_4' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_5' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_6' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_7' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_8' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_9' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_10' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv/ofmap_11' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'ifmap_0', 'ifmap_1', 'ifmap_2', 'ifmap_3', 'ifmap_4', 'ifmap_5', 'ifmap_6', 'ifmap_7', 'ifmap_8', 'ifmap_9', 'ifmap_10', 'ifmap_11', 'ifmap_12', 'ifmap_13', 'ifmap_14', 'ifmap_15', 'ifmap_16', 'ifmap_17', 'ifmap_18', 'ifmap_19', 'ifmap_20', 'ifmap_21', 'ifmap_22', 'ifmap_23', 'ifmap_24', 'ifmap_25', 'ifmap_26', 'ifmap_27', 'ifmap_28', 'ifmap_29', 'ifmap_30', 'ifmap_31', 'ifmap_32', 'ifmap_33', 'ifmap_34', 'ifmap_35', 'ifmap_36', 'ifmap_37', 'ifmap_38', 'ifmap_39', 'ifmap_40', 'ifmap_41', 'ifmap_42', 'ifmap_43', 'ifmap_44', 'ifmap_45', 'ifmap_46', 'ifmap_47', 'ifmap_48', 'ifmap_49', 'ifmap_50', 'ifmap_51', 'ifmap_52', 'ifmap_53', 'ifmap_54', 'ifmap_55', 'ifmap_56', 'ifmap_57', 'ifmap_58', 'ifmap_59', 'ifmap_60', 'ifmap_61', 'ifmap_62', 'ifmap_63', 'ifmap_64', 'ifmap_65', 'ifmap_66', 'ifmap_67', 'ifmap_68', 'ifmap_69', 'ifmap_70', 'ifmap_71', 'ifmap_72', 'ifmap_73', 'ifmap_74', 'ifmap_75', 'ifmap_76', 'ifmap_77', 'ifmap_78', 'ifmap_79', 'ifmap_80', 'ifmap_81', 'ifmap_82', 'ifmap_83', 'ifmap_84', 'ifmap_85', 'ifmap_86', 'ifmap_87', 'ifmap_88', 'ifmap_89', 'ifmap_90', 'ifmap_91', 'ifmap_92', 'ifmap_93', 'ifmap_94', 'ifmap_95', 'ifmap_96', 'ifmap_97', 'ifmap_98', 'ifmap_99', 'ifmap_100', 'ifmap_101', 'ifmap_102', 'ifmap_103', 'ifmap_104', 'ifmap_105', 'ifmap_106', 'ifmap_107', 'ifmap_108', 'ifmap_109', 'ifmap_110', 'ifmap_111', 'ifmap_112', 'ifmap_113', 'ifmap_114', 'ifmap_115', 'ifmap_116', 'ifmap_117', 'ifmap_118', 'ifmap_119', 'ifmap_120', 'ifmap_121', 'ifmap_122', 'ifmap_123', 'ifmap_124', 'ifmap_125', 'ifmap_126', 'ifmap_127', 'ifmap_128', 'ifmap_129', 'ifmap_130', 'ifmap_131', 'ifmap_132', 'ifmap_133', 'ifmap_134', 'ifmap_135', 'ifmap_136', 'ifmap_137', 'ifmap_138', 'ifmap_139', 'ifmap_140', 'ifmap_141', 'ifmap_142', 'ifmap_143', 'ifmap_144', 'ifmap_145', 'ifmap_146', 'ifmap_147', 'ifmap_148', 'ifmap_149', 'ifmap_150', 'ifmap_151', 'ifmap_152', 'ifmap_153', 'ifmap_154', 'ifmap_155', 'ifmap_156', 'ifmap_157', 'ifmap_158', 'ifmap_159', 'ifmap_160', 'ifmap_161', 'ifmap_162', 'ifmap_163', 'ifmap_164', 'ifmap_165', 'ifmap_166', 'ifmap_167', 'ifmap_168', 'ifmap_169', 'ifmap_170', 'ifmap_171', 'ifmap_172', 'ifmap_173', 'ifmap_174', 'ifmap_175', 'ifmap_176', 'ifmap_177', 'ifmap_178', 'ifmap_179', 'ifmap_180', 'ifmap_181', 'ifmap_182', 'ifmap_183', 'ifmap_184', 'ifmap_185', 'ifmap_186', 'ifmap_187', 'ifmap_188', 'ifmap_189', 'ifmap_190', 'ifmap_191', 'ifmap_192', 'ifmap_193', 'ifmap_194', 'ifmap_195', 'ifmap_196', 'ifmap_197', 'ifmap_198', 'ifmap_199', 'ifmap_200', 'ifmap_201', 'ifmap_202', 'ifmap_203', 'ifmap_204', 'ifmap_205', 'ifmap_206', 'ifmap_207', 'ifmap_208', 'ifmap_209', 'ifmap_210', 'ifmap_211', 'ifmap_212', 'ifmap_213', 'ifmap_214', 'ifmap_215', 'ifmap_216', 'ifmap_217', 'ifmap_218', 'ifmap_219', 'ifmap_220', 'ifmap_221', 'ifmap_222', 'ifmap_223', 'ifmap_224', 'ifmap_225', 'ifmap_226', 'ifmap_227', 'ifmap_228', 'ifmap_229', 'ifmap_230', 'ifmap_231', 'ifmap_232', 'ifmap_233', 'ifmap_234', 'ifmap_235', 'ifmap_236', 'ifmap_237', 'ifmap_238', 'ifmap_239', 'ifmap_240', 'ifmap_241', 'ifmap_242', 'ifmap_243', 'ifmap_244', 'ifmap_245', 'ifmap_246', 'ifmap_247', 'ifmap_248', 'ifmap_249', 'ifmap_250', 'ifmap_251', 'ifmap_252', 'ifmap_253', 'ifmap_254', 'ifmap_255', 'filter_0', 'filter_1', 'filter_2', 'filter_3', 'filter_4', 'filter_5', 'filter_6', 'filter_7', 'filter_8', 'filter_9', 'filter_10', 'filter_11', 'filter_12', 'filter_13', 'filter_14', 'filter_15', 'filter_16', 'filter_17', 'filter_18', 'filter_19', 'filter_20', 'filter_21', 'filter_22', 'filter_23', 'filter_24', 'ofmap_0', 'ofmap_1', 'ofmap_2', 'ofmap_3', 'ofmap_4', 'ofmap_5', 'ofmap_6', 'ofmap_7', 'ofmap_8', 'ofmap_9', 'ofmap_10' and 'ofmap_11' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'conv_mux_2568_32_1_1' to 'conv_mux_2568_32_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_mux_2568_32_bkb': 23 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv'.
+Command       create_rtl_model done; 4.514 sec.
+INFO: [HLS 200-111]  Elapsed time: 7.476 seconds; current allocated memory: 195.023 MB.
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       gen_rtl conv -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/aranz/FPGA/im2col/im2col/solution1/syn/systemc/conv -synmodules conv 
+Execute       gen_rtl conv -istop -style xilinx -f -lang vhdl -o C:/Users/aranz/FPGA/im2col/im2col/solution1/syn/vhdl/conv 
+Command       gen_rtl done; 0.101 sec.
+Execute       gen_rtl conv -istop -style xilinx -f -lang vlog -o C:/Users/aranz/FPGA/im2col/im2col/solution1/syn/verilog/conv 
+Execute       syn_report -csynth -model conv -o C:/Users/aranz/FPGA/im2col/im2col/solution1/syn/report/conv_csynth.rpt 
+Execute       syn_report -rtlxml -model conv -o C:/Users/aranz/FPGA/im2col/im2col/solution1/syn/report/conv_csynth.xml 
+Execute       syn_report -verbosereport -model conv -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.verbose.rpt 
+Command       syn_report done; 1.05 sec.
+Execute       db_write -model conv -f -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.adb 
+Command       db_write done; 1.976 sec.
+Execute       gen_tb_info conv -p C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv 
+Execute       export_constraint_db -f -tool general -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.constraint.tcl 
+Execute       syn_report -designview -model conv -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.design.xml 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model conv -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model conv -o C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks conv 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain conv 
+INFO-FLOW: Model list for RTL component generation: conv
+INFO-FLOW: Handling components in module [conv] ... 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.compgen.tcl 
+INFO-FLOW: Found component conv_mux_2568_32_bkb.
+INFO-FLOW: Append model conv_mux_2568_32_bkb
+INFO-FLOW: Found component conv_AXILiteS_s_axi.
+INFO-FLOW: Append model conv_AXILiteS_s_axi
+INFO-FLOW: Append model conv
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: conv_mux_2568_32_bkb conv_AXILiteS_s_axi conv
+INFO-FLOW: To file: write model conv_mux_2568_32_bkb
+INFO-FLOW: To file: write model conv_AXILiteS_s_axi
+INFO-FLOW: To file: write model conv
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       syn_report -model conv -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 114.39 MHz
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/aranz/FPGA/im2col/im2col/solution1
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.148 sec.
+Command       ap_source done; 0.148 sec.
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.33 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/aranz/FPGA/im2col/im2col/solution1
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.129 sec.
+Command       ap_source done; 0.129 sec.
+Execute       source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=conv xml_exists=0
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.constraint.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=293
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=3 #gSsdmPorts=0
+Execute       source D:/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.compgen.dataonly.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.compgen.dataonly.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.compgen.dataonly.tcl 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.constraint.tcl 
+Execute       sc_get_clocks conv 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/conv.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: C:/Users/aranz/FPGA/im2col/im2col/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 304.172 ; gain = 214.180
+INFO: [VHDL 208-304] Generating VHDL RTL for conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv.
+Command     autosyn done; 23.507 sec.
+Command   csynth_design done; 77.825 sec.
+Command ap_source done; 79.121 sec.
+Execute cleanup_all 
